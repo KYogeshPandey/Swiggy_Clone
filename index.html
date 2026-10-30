@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order food and groceries online from best restaurants and stores near you on Swiggy. Fast delivery and best offers.">
+  <title>Swiggy Clone - Order Food &amp; Groceries Online</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..900;1,6..12,300..900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo-link" aria-label="Swiggy Home">
+        <img src="assets/icons/swiggy-logo.svg" alt="Swiggy Logo" class="header__logo" width="160" height="48">
+      </a>
+
+      <!-- CSS-only Mobile Nav Toggle Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="header__toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="header__toggle-btn" aria-label="Open menu">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </label>
+
+      <nav class="header__nav" aria-label="Main Navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item header__nav-item--secondary">
+            <a href="#corporate" class="header__nav-link">
+              <img src="assets/icons/icon-corporate.svg" alt="" class="header__nav-icon" width="18" height="18" aria-hidden="true">
+              <span>Swiggy Corporate</span>
+            </a>
+          </li>
+          <li class="header__nav-item header__nav-item--secondary">
+            <a href="#partner" class="header__nav-link">
+              <img src="assets/icons/icon-partner.svg" alt="" class="header__nav-icon" width="18" height="18" aria-hidden="true">
+              <span>Partner with us</span>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#get-app" class="header__btn header__btn--outline">
+              <img src="assets/icons/icon-app.svg" alt="" class="header__btn-icon" width="18" height="18" aria-hidden="true">
+              <span>Get the App</span>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#signin" class="header__btn header__btn--dark">
+              <img src="assets/icons/icon-user.svg" alt="" class="header__btn-icon" width="18" height="18" aria-hidden="true">
+              <span>Sign in</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT
+       ========================================== -->
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero" aria-label="Hero search section">
+      <div class="hero__illustration hero__illustration--left">
+        <img src="assets/images/hero-left.png" alt="Fresh vegetable bowl and sushi platter" class="hero__illustration-img" width="320" height="320">
+      </div>
+
+      <div class="hero__container">
+        <h1 class="hero__heading">Order food &amp; groceries. Discover best restaurants. Swiggy it!</h1>
+        
+        <div class="hero__search-box">
+          <!-- Location Input -->
+          <div class="hero__input-wrapper hero__input-wrapper--location">
+            <img src="assets/icons/icon-location.svg" alt="" class="hero__input-icon" width="20" height="20" aria-hidden="true">
+            <input type="text" class="hero__input" placeholder="Enter your delivery location" aria-label="Enter your delivery location" value="Indiranagar, Bengaluru">
+            <button type="button" class="hero__locate-btn" aria-label="Detect current location">
+              <span>Locate Me</span>
+              <img src="assets/icons/icon-chevron-down.svg" alt="" class="hero__chevron" width="14" height="14" aria-hidden="true">
+            </button>
+          </div>
+
+          <!-- Query Search Input -->
+          <div class="hero__input-wrapper hero__input-wrapper--search">
+            <input type="text" class="hero__input" placeholder="Search for restaurant, item or more" aria-label="Search for restaurant, item or more">
+            <button type="button" class="hero__search-btn" aria-label="Search">
+              <img src="assets/icons/icon-search.svg" alt="" class="hero__search-icon" width="20" height="20" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__illustration hero__illustration--right">
+        <img src="assets/images/hero-right.png" alt="Delicious burger and food delivery assortment" class="hero__illustration-img" width="320" height="320">
+      </div>
+    </section>
+
+    <!-- 2. SERVICE CARDS SECTION -->
+    <section class="services section-container" aria-label="Swiggy Services">
+      <div class="services__grid">
+        
+        <!-- Card 1: Food Delivery -->
+        <article class="service-card service-card--food">
+          <div class="service-card__content">
+            <span class="service-card__badge">FOOD DELIVERY</span>
+            <h2 class="service-card__title">FROM RESTAURANTS</h2>
+            <p class="service-card__offer">UPTO 60% OFF</p>
+            <div class="service-card__action">
+              <span class="service-card__link-text">Order Now</span>
+              <span class="service-card__arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </div>
+          <div class="service-card__image-wrap">
+            <img src="assets/images/card-food.png" alt="Gourmet meal spread from top restaurants" class="service-card__img" width="350" height="250">
+          </div>
+        </article>
+
+        <!-- Card 2: Instamart -->
+        <article class="service-card service-card--instamart">
+          <div class="service-card__content">
+            <span class="service-card__badge">INSTAMART</span>
+            <h2 class="service-card__title">INSTANT GROCERY</h2>
+            <p class="service-card__offer">FREE DELIVERY</p>
+            <div class="service-card__action">
+              <span class="service-card__link-text">Shop Now</span>
+              <span class="service-card__arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </div>
+          <div class="service-card__image-wrap">
+            <img src="assets/images/card-instamart.png" alt="Fresh groceries delivered in 10 minutes" class="service-card__img" width="350" height="250">
+          </div>
+        </article>
+
+        <!-- Card 3: Dineout -->
+        <article class="service-card service-card--dineout">
+          <div class="service-card__content">
+            <span class="service-card__badge">DINEOUT</span>
+            <h2 class="service-card__title">EAT OUT &amp; SAVE MORE</h2>
+            <p class="service-card__offer">UPTO 50% OFF</p>
+            <div class="service-card__action">
+              <span class="service-card__link-text">Explore Dining</span>
+              <span class="service-card__arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </div>
+          <div class="service-card__image-wrap">
+            <img src="assets/images/card-dineout.png" alt="Elegant restaurant table setting" class="service-card__img" width="350" height="250">
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3. FOOD OPTIONS SECTION -->
+    <section class="food-options section-container" aria-label="Order our best food options">
+      <div class="section-header">
+        <h2 class="section-header__title">Order our best food options</h2>
+      </div>
+
+      <div class="food-options__grid">
+        <a href="#pizza" class="food-card" aria-label="Order Pizza">
+          <div class="food-card__image-container">
+            <img src="assets/images/food-pizza.png" alt="Hot oven-baked cheesy pizza with fresh toppings" class="food-card__img" width="160" height="160">
+          </div>
+          <span class="food-card__label">Pizza</span>
+        </a>
+
+        <a href="#burger" class="food-card" aria-label="Order Burger">
+          <div class="food-card__image-container">
+            <img src="assets/images/food-burger.png" alt="Juicy gourmet burger with crisp lettuce" class="food-card__img" width="160" height="160">
+          </div>
+          <span class="food-card__label">Burger</span>
+        </a>
+
+        <a href="#biryani" class="food-card" aria-label="Order Biryani">
+          <div class="food-card__image-container">
+            <img src="assets/images/food-biryani.png" alt="Aromatic dum cooked royal biryani" class="food-card__img" width="160" height="160">
+          </div>
+          <span class="food-card__label">Biryani</span>
+        </a>
+
+        <a href="#cakes" class="food-card" aria-label="Order Cakes">
+          <div class="food-card__image-container">
+            <img src="assets/images/food-cakes.png" alt="Decadent chocolate bakery cake" class="food-card__img" width="160" height="160">
+          </div>
+          <span class="food-card__label">Cakes</span>
+        </a>
+
+        <a href="#north-indian" class="food-card" aria-label="Order North Indian">
+          <div class="food-card__image-container">
+            <img src="assets/images/food-north-indian.png" alt="Rich butter paneer curry and garlic naan" class="food-card__img" width="160" height="160">
+          </div>
+          <span class="food-card__label">North Indian</span>
+        </a>
+
+        <a href="#south-indian" class="food-card" aria-label="Order South Indian">
+          <div class="food-card__image-container">
+            <img src="assets/images/food-south-indian.png" alt="Crisp golden masala dosa with chutney and sambar" class="food-card__img" width="160" height="160">
+          </div>
+          <span class="food-card__label">South Indian</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 4. INSTAMART GROCERIES SECTION -->
+    <section class="groceries section-container" aria-label="Shop groceries on Instamart">
+      <div class="section-header">
+        <h2 class="section-header__title">Shop groceries on Instamart</h2>
+      </div>
+
+      <div class="groceries__grid">
+        <a href="#vegetables" class="grocery-card" aria-label="Shop Fresh Vegetables">
+          <div class="grocery-card__image-container">
+            <img src="assets/images/instamart-vegetables.png" alt="Farm fresh crisp vegetables" class="grocery-card__img" width="160" height="160">
+          </div>
+          <span class="grocery-card__label">Fresh Vegetables</span>
+        </a>
+
+        <a href="#fruits" class="grocery-card" aria-label="Shop Fresh Fruits">
+          <div class="grocery-card__image-container">
+            <img src="assets/images/instamart-fruits.png" alt="Colorful assortment of fresh organic fruits" class="grocery-card__img" width="160" height="160">
+          </div>
+          <span class="grocery-card__label">Fresh Fruits</span>
+        </a>
+
+        <a href="#dairy" class="grocery-card" aria-label="Shop Dairy, Bread and Eggs">
+          <div class="grocery-card__image-container">
+            <img src="assets/images/instamart-dairy.png" alt="Fresh milk bottle, butter and farm eggs" class="grocery-card__img" width="160" height="160">
+          </div>
+          <span class="grocery-card__label">Dairy, Bread &amp; Eggs</span>
+        </a>
+
+        <a href="#munchies" class="grocery-card" aria-label="Shop Munchies">
+          <div class="grocery-card__image-container">
+            <img src="assets/images/instamart-munchies.png" alt="Crunchy potato chips and savoury snack packs" class="grocery-card__img" width="160" height="160">
+          </div>
+          <span class="grocery-card__label">Munchies</span>
+        </a>
+
+        <a href="#cold-drinks" class="grocery-card" aria-label="Shop Cold Drinks">
+          <div class="grocery-card__image-container">
+            <img src="assets/images/instamart-drinks.png" alt="Chilled cold drinks, soda and fruit juices" class="grocery-card__img" width="160" height="160">
+          </div>
+          <span class="grocery-card__label">Cold Drinks</span>
+        </a>
+
+        <a href="#personal-care" class="grocery-card" aria-label="Shop Personal Care">
+          <div class="grocery-card__image-container">
+            <img src="assets/images/instamart-care.png" alt="Skincare essentials and personal hygiene products" class="grocery-card__img" width="160" height="160">
+          </div>
+          <span class="grocery-card__label">Personal Care</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. APP PROMO BANNER SECTION -->
+    <section class="app-promo" aria-label="Download Swiggy App">
+      <div class="app-promo__container">
+        <div class="app-promo__text">
+          <h2 class="app-promo__title">For better experience, download the Swiggy app now</h2>
+        </div>
+        <div class="app-promo__badges">
+          <a href="#googleplay" class="app-promo__badge-link" aria-label="Get it on Google Play">
+            <img src="assets/images/google-play.svg" alt="Get it on Google Play" class="app-promo__badge-img" width="170" height="50">
+          </a>
+          <a href="#appstore" class="app-promo__badge-link" aria-label="Download on the App Store">
+            <img src="assets/images/app-store.svg" alt="Download on the App Store" class="app-promo__badge-img" width="170" height="50">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="footer__container">
+
+      <!-- Column 1: Brand & Copyright -->
+      <div class="footer__col footer__col--brand">
+        <a href="#" class="footer__brand-link" aria-label="Swiggy Home">
+          <img src="assets/icons/swiggy-logo.svg" alt="Swiggy Logo" class="footer__logo" width="150" height="45">
+        </a>
+        <p class="footer__copyright">&copy; 2026 Swiggy Limited</p>
+      </div>
+
+      <!-- Column 2: Company -->
+      <div class="footer__col">
+        <h3 class="footer__heading">Company</h3>
+        <ul class="footer__list">
+          <li><a href="#about" class="footer__link">About Us</a></li>
+          <li><a href="#corporate" class="footer__link">Swiggy Corporate</a></li>
+          <li><a href="#careers" class="footer__link">Careers</a></li>
+          <li><a href="#team" class="footer__link">Team</a></li>
+          <li><a href="#swiggy-one" class="footer__link">Swiggy One</a></li>
+          <li><a href="#instamart" class="footer__link">Swiggy Instamart</a></li>
+          <li><a href="#dineout" class="footer__link">Swiggy Dineout</a></li>
+          <li><a href="#minis" class="footer__link">Swiggy Minis</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Us -->
+      <div class="footer__col">
+        <h3 class="footer__heading">Contact us</h3>
+        <ul class="footer__list">
+          <li><a href="#help" class="footer__link">Help &amp; Support</a></li>
+          <li><a href="#partner" class="footer__link">Partner with us</a></li>
+          <li><a href="#ride" class="footer__link">Ride with us</a></li>
+        </ul>
+
+        <h3 class="footer__heading footer__heading--sub">Legal</h3>
+        <ul class="footer__list">
+          <li><a href="#terms" class="footer__link">Terms &amp; Conditions</a></li>
+          <li><a href="#cookie" class="footer__link">Cookie Policy</a></li>
+          <li><a href="#privacy" class="footer__link">Privacy Policy</a></li>
+          <li><a href="#investor" class="footer__link">Investor Relations</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Available in (Cities) -->
+      <div class="footer__col">
+        <h3 class="footer__heading">Available in:</h3>
+        <ul class="footer__list">
+          <li><a href="#bangalore" class="footer__link">Bangalore</a></li>
+          <li><a href="#gurgaon" class="footer__link">Gurgaon</a></li>
+          <li><a href="#hyderabad" class="footer__link">Hyderabad</a></li>
+          <li><a href="#delhi" class="footer__link">Delhi</a></li>
+          <li><a href="#mumbai" class="footer__link">Mumbai</a></li>
+          <li><a href="#pune" class="footer__link">Pune</a></li>
+        </ul>
+        <div class="footer__cities-btn-wrap">
+          <a href="#cities" class="footer__cities-btn">685+ cities <span aria-hidden="true">&darr;</span></a>
+        </div>
+      </div>
+
+      <!-- Column 5: Life at Swiggy & Social -->
+      <div class="footer__col">
+        <h3 class="footer__heading">Life at Swiggy</h3>
+        <ul class="footer__list">
+          <li><a href="#explore" class="footer__link">Explore with Swiggy</a></li>
+          <li><a href="#news" class="footer__link">Swiggy News</a></li>
+          <li><a href="#snackables" class="footer__link">Snackables</a></li>
+        </ul>
+
+        <h3 class="footer__heading footer__heading--sub">Social Links</h3>
+        <div class="footer__socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="22" height="22">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" alt="Instagram" width="22" height="22">
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+            <img src="assets/icons/facebook.svg" alt="Facebook" width="22" height="22">
+          </a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Pinterest">
+            <img src="assets/icons/pinterest.svg" alt="Pinterest" width="22" height="22">
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter">
+            <img src="assets/icons/twitter.svg" alt="Twitter" width="22" height="22">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Disclaimer Bar -->
+    <div class="footer__bottom">
+      <div class="footer__bottom-container">
+        <p class="footer__bottom-text">
+          By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
