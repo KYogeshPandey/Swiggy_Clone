@@ -62,13 +62,10 @@ Swiggy_clone/
 ├── assets/
 │   ├── icons/        # SVG icons (logo, search, location, social links)
 │   └── images/       # Food, grocery, service card photos, and store badges
-├── screenshots/
-│   ├── desktop.png   # Full-page desktop capture (1440px)
-│   ├── tablet.png    # Full-page tablet capture (768px)
-│   └── mobile.png    # Full-page mobile capture (375px)
-└── docs/
-    ├── design-spec.md
-    └── requirements.md
+└── screenshots/
+    ├── desktop.png   # Full-page desktop capture (1440px)
+    ├── tablet.png    # Full-page tablet capture (768px)
+    └── mobile.png    # Full-page mobile capture (375px)
 ```
 
 ## How to Run
@@ -83,8 +80,3 @@ Swiggy_clone/
 - **Preventing Grid Overflow:** Default grid item sizing (`min-width: auto`) caused layout overflow on narrower desktop widths; switching to `minmax(0, 1fr)` solved the issue completely.
 - **Aspect Ratio & Image Sizing:** Setting explicit `max-width`, aspect ratios, and `object-fit: cover` prevented layout shifts and ensured images scale smoothly across resolutions.
 - **Zero Horizontal Scrolling:** Managing absolute hero decorations and padding at smaller viewports required `contain: paint` and disciplined media query rules to maintain zero horizontal scroll from 320px to 1920px.
-
-## Notes
-
-This project is an educational static clone created for a frontend design assignment. All brand names, logos, and trademarks belong to Swiggy Limited. Search fields, location buttons, and navigation links are non-functional placeholders.
-
